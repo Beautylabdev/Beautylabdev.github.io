@@ -5,9 +5,13 @@
 # Node
 node_modules
 
+# yarn
+yarn.lock
+
 # MacOS
 .DS_Store
 
 # Generated files
 backstop_data
 dist
+.cache
