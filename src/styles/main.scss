@@ -1,7 +1,246 @@
-@import "utils";
 @import "fonts";
-@import "typography";
 
 body {
-  background: $c-gray;
+  text-align: center;
+}
+
+// main {
+//   width: 1120px;
+// }
+
+p {
+  // width: 1120px;
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+// p::selection {
+//   color: #fff;
+//   background: #333;
+//   text-shadow: none;
+// }
+
+::selection {
+  color: #fff;
+  background: #333;
+  text-shadow: none;
+}
+
+h2 {
+  font-family: "Six Caps", sans-serif;
+  font-weight: 100;
+  color: #efc91c;
+  letter-spacing: 2px;
+}
+
+.website-name {
+  text-align: center;
+  border-bottom: 1px solid #f1f1f1;
+
+  &__link {
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-family: "Six Caps", sans-serif;
+    text-decoration: none;
+    color: #efc91c;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #0066bf;
+    }
+  }
+}
+
+.title {
+  border-bottom: 1px solid #f1f1f1;
+  text-align: center;
+  margin-bottom: 10px;
+
+  &__text {
+    color: #333;
+    font-size: 32px;
+    font-family: "Six Caps", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+}
+
+.reference {
+  text-align: center;
+  padding-bottom: 20px;
+
+  &__text {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
+  &__link {
+    color: #efc91c;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #0066bf;
+    }
+  }
+}
+
+.decor-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: "Six Caps", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #efc91c;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    width: 1120px;
+    height: 70px;
+    background-color: #0c0c0c;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  &__chat {
+
+    // justify-content: start;
+  }
+
+  &__icon {
+    position: relative;
+    // padding: 0 50px 0 20px;
+
+    margin-left: 40px;
+    // margin-right: 50px;
+    background-image: url(../images/icon/icons8-whatsapp.svg);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+  }
+
+  &__text {
+    color: #ffdc73;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0 auto;
+  }
+
+  &__description {
+    font-size: 18px;
+  }
+}
+
+.services {
+  text-align: center;
+}
+
+.conditions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    color: #0c0c0c;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.container {
+  margin-bottom: 5px;
+}
+
+.benefits {
+  &__text {
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+
+  &__link {
+    color: #efc91c;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+      color: #0066bf;
+    }
+  }
+
+  &__tagline {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+    text-decoration: underline;
+    font-style: italic;
+  }
+}
+
+.locations {
+  &__line {
+    margin: 0 auto;
+    height: 2px;
+    width: 78px;
+    background: black;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-family: "Six Caps", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+}
+
+.tags {
+  &__title {
+    font-size: 18px;
+    font-family: "Six Caps", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  &__list {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 3em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+}
+
+.image-slider {
+  padding: 30px 0 70px;
+}
+
+// .image-slider__wrapper {
+
+// }
+
+// .image-slider__slide {
+
+// }
+
+.image-slider__image {
+  text-align: center;
+}
+
+.image-slider__image img {
+  max-width: 100%;
 }

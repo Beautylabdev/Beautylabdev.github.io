@@ -5,9 +5,6 @@
 # Node
 node_modules
 
-# yarn
-yarn.lock
-
 # MacOS
 .DS_Store
 
