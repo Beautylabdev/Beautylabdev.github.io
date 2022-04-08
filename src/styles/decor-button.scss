@@ -1,0 +1,61 @@
+.decor-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: $six-caps;
+    font-weight: 400;
+    text-decoration: none;
+    color: $color-yellow;
+  }
+
+  &__chat {
+    width: 100%;
+    max-width: 1120px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+
+    height: 70px;
+    background-color: $color-black;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  &__icon {
+    position: relative;
+    margin-left: 40px;
+    background-image: url(../images/icon/icons8-whatsapp.svg);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+
+    @media (max-width: 520px) {
+      padding-left: 7px;
+    }
+  }
+
+  &__text {
+    color: #ffdc73;
+    font-size: 20px;
+    font-family: $trebuchet-mS;
+    margin: 0 auto;
+
+    @media (max-width: 520px) {
+      padding-left: 7px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}

@@ -1,0 +1,25 @@
+.benefits {
+  &__text {
+    font-size: 18px;
+    font-family: $trebuchet-mS;
+    line-height: 32px;
+  }
+
+  &__link {
+    color: $color-yellow;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+      color: #0066bf;
+    }
+  }
+
+  &__tagline {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+    text-decoration: underline;
+    font-style: italic;
+  }
+}

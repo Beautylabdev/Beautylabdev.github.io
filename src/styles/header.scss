@@ -1,0 +1,30 @@
+.website-name {
+  border-bottom: 1px solid #f1f1f1;
+
+  &__link {
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-family: $six-caps;
+    text-decoration: none;
+    color: $color-yellow;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #0066bf;
+    }
+  }
+}
+
+.title {
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+
+  &__text {
+    color: #333;
+    font-size: 32px;
+    font-family: $six-caps;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+}

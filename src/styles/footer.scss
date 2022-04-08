@@ -1,0 +1,17 @@
+.tags {
+  text-align: center;
+
+  &__title {
+    font-size: 18px;
+    font-family: $six-caps;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  &__list {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 3em;
+    font-family: $trebuchet-mS;
+  }
+}

@@ -1,0 +1,21 @@
+.locations {
+  &__line {
+    margin: 0 auto;
+    height: 2px;
+    width: 78px;
+    background: $color-black;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-family: $six-caps;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+
+  &__text {
+    text-align: start;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
