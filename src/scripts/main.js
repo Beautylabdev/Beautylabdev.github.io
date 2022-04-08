@@ -14,3 +14,15 @@ export const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const arrow = document.querySelector('.arrow');
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = document.documentElement.scrollTop;
+
+  if (scrollPosition > 700) {
+    arrow.classList.add('show');
+  } else {
+    arrow.classList.remove('show');
+  }
+});
