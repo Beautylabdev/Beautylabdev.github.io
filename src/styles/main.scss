@@ -6,16 +6,18 @@
   }
 }
 
-body {
+html {
   text-align: center;
 }
 
-// main {
-//   width: 1120px;
-// }
+body {
+  text-align: center;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
 
 p {
-  // width: 1120px;
   text-align: center;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -144,16 +146,27 @@ h2 {
 
   &__description {
     font-size: 18px;
+    line-height: 32px;
+    // width: 1120px;
   }
 }
 
 .services {
   text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.extras {
+  &__description {
+    // width: 1120px;
+    margin: 0 auto;
+  }
 }
 
 .conditions {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 16px;
 
   &__list {
@@ -187,8 +200,9 @@ h2 {
 
 .benefits {
   &__text {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    line-height: 32px;
   }
 
   &__link {
@@ -224,9 +238,16 @@ h2 {
     letter-spacing: 2px;
     font-weight: 100;
   }
+
+  &__text {
+    text-align: start;
+    font-size: 16px;
+    line-height: 32px;
+  }
 }
 
 .tags {
+  text-align: center;
   &__title {
     font-size: 18px;
     font-family: "Six Caps", sans-serif;
@@ -244,6 +265,7 @@ h2 {
 
 .swiper {
   object-fit: cover;
+  margin-bottom: 30px;
 }
 
 .swiper-slide img {
