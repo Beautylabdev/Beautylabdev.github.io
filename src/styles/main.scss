@@ -1,5 +1,11 @@
 @import "fonts";
 
+@mixin onMobile {
+  @media (max-width: 520px) {
+    @content;
+  }
+}
+
 body {
   text-align: center;
 }
@@ -13,12 +19,6 @@ p {
   text-align: center;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
-// p::selection {
-//   color: #fff;
-//   background: #333;
-//   text-shadow: none;
-// }
 
 ::selection {
   color: #fff;
@@ -100,11 +100,16 @@ h2 {
     color: #efc91c;
   }
 
+  &__chat {
+    width: 100%;
+    max-width: 1120px;
+  }
+
   &__link {
     display: flex;
     align-items: center;
     align-self: flex-end;
-    width: 1120px;
+
     height: 70px;
     background-color: #0c0c0c;
     border-radius: 50px;
@@ -113,21 +118,17 @@ h2 {
     text-decoration: none;
   }
 
-  &__chat {
-
-    // justify-content: start;
-  }
-
   &__icon {
     position: relative;
-    // padding: 0 50px 0 20px;
-
     margin-left: 40px;
-    // margin-right: 50px;
     background-image: url(../images/icon/icons8-whatsapp.svg);
     background-repeat: no-repeat;
     height: 24px;
     width: 24px;
+
+    @include onMobile {
+      padding-left: 7px;
+    }
   }
 
   &__text {
@@ -135,6 +136,10 @@ h2 {
     font-size: 20px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     margin: 0 auto;
+
+    @include onMobile {
+      padding-right: 5px;
+    }
   }
 
   &__description {
@@ -225,22 +230,11 @@ h2 {
   }
 }
 
-.image-slider {
-  padding: 30px 0 70px;
+.swiper {
+  object-fit: cover;
 }
 
-// .image-slider__wrapper {
-
-// }
-
-// .image-slider__slide {
-
-// }
-
-.image-slider__image {
-  text-align: center;
-}
-
-.image-slider__image img {
+.swiper-slide img {
+  object-fit: cover;
   max-width: 100%;
 }
