@@ -1,5 +1,5 @@
 # Technologies used: HTML5, CSS3, Sass (SCSS), BEM, JavaScript.
-- [DEMO LINK](https://beautylabdev.github.io/escort/)
+- [DEMO LINK](https://beautylabdev.github.io/)
 
 # Instruction
 - `npm install` - to install all dependencies
